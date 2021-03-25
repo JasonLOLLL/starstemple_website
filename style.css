@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --primaryDark: #031927;
+  --primaryLight: #9dd1f1;
+  --primaryBlue: #508aa8;
+  --secondaryBlue: #c8e0f4;
+  --primaryRed: #ba1200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: white;
+}
+
+header .wrapper {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 0 7px;
+  transition: all 200ms ease;
+  height: 5rem;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+header .logo {
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+header .wrapper .navigation {
+  display: none;
+  padding: 1.5rem;
+  flex-shrink: 0;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  margin-left: 3rem;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 200ms ease;
+}
+
+.navigation li a:hover {
+  color: var(--primaryLight);
+}
+
+.sticky {
+  background: var(--primaryDark);
+}
+
+#menu {
+  display: block;
+  height: 3rem;
+}
+
+header .menu-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  background: var(--primaryDark);
+  height: 60vh;
+  z-index: 1000;
+}
+
+header .menu-container .navigation {
+  height: calc(100% - 5rem);
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+header .menu-container .navigation li {
+  padding: 1.5rem 0;
+  margin: 0.7rem auto;
+  width: 100%;
+  border-radius: 0.25rem;
+  transition: all 150ms ease;
+}
+
+header .menu-container .navigation li:hover {
+  background: #020e16;
+}
+
+header .menu-container a {
+  margin: 0 auto;
+}
+
+.home-heading {
+  background-color: var(--primaryBlue);
+  background-image: url(./images/earth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+}
+
+.home-heading > div {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.home-heading h2 {
+  color: var(--primaryRed);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+}
+
+.home-heading p {
+  color: white;
+  font-size: 1.2rem;
+  max-width: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-heading .image-container {
+  width: 5rem;
+  height: 5rem;
+}
+
+.home-heading .image-container img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  color: white;
+}
+
+.home-heading .heading-button {
+  outline: none;
+  border: none;
+  background: white;
+  color: var(--primaryDark);
+  padding: 0.9rem 3rem;
+  margin: 0.6rem auto;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.home-heading .heading-button:hover {
+  background: var(--primaryRed);
+  padding: 0.9rem 4rem;
+}
+
+.about-section {
+  background: white;
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.about-section .top-description {
+  text-align: center;
+  padding: 2rem;
+  /* fix sizing issues it should take up no more than 150vh */
+}
+
+.title {
+  color: var(--primaryDark);
+  margin: 3rem 0;
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.about-section .top-description p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  max-width: 60rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+}
+
+span {
+  color: var(--primaryRed);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 95vw;
+  height: 90rem;
+  margin: 0 auto;
+}
+
+.card {
+  width: 90%;
+  height: 25rem;
+  background: var(--primaryDark);
+  color: white;
+  box-shadow: 0 0 8px var(--primaryDark);
+  text-align: center;
+  padding: 2rem;
+  flex-shrink: 0;
+  margin: 1rem 0.8rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin: 0.5rem auto;
+}
+
+.card p {
+  margin: 1rem auto;
+}
+
+.cards-container .img-container {
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+
+.cards-container .img-container img {
+  width: 100%;
+  padding: 1rem;
+  object-fit: cover;
+}
+
+.card a {
+  color: white;
+}
+
+.thecode {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background: white;
+  display: inline-block;
+}
+
+.thecode .title {
+  margin-top: 8rem;
+}
+
+.thecode .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem auto;
+  padding: 1rem;
+  background: var(--primaryDark);
+  box-shadow: 0 0 5px black;
+  color: white;
+  max-width: 90%;
+}
+
+.thecode .container .description {
+  width: 100%;
+  margin: 1rem 1rem 1rem 0;
+  font-size: 1.2rem;
+  padding: 3rem;
+}
+
+.thecode .container .description p {
+  margin-top: 1rem;
+}
+
+.thecode .container .description span {
+  font-size: 2rem;
+  color: white;
+}
+
+.thecode .container .img-container {
+  width: 100%;
+  max-height: 20rem;
+  margin: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+}
+
+.thecode .container .img-container img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  object-fit: contain;
+}
+
+.thecode .hidden {
+  display: none;
+}
+
+.carousel-container {
+  margin-top: -4rem;
+  text-align: center;
+}
+
+.carousel-button {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 3rem;
+  padding: 1rem 4rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: var(--primaryDark);
+  color: white;
+  transition: background 150ms ease;
+}
+
+.carousel-button:hover {
+  background-color: #020e16;
+}
+
+.carousel-container #page-number {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Media query to set the flexbox to column when it reaches smaller screens */
+
+@media screen and (min-width: 41.875rem) {
+  .cards-container {
+    flex-direction: row;
+    height: 90rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 52.625rem) {
+  header .wrapper .navigation {
+    display: flex;
+    padding: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  header .menu-container {
+    display: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    height: 57em;
+  }
+
+  .thecode .container {
+    flex-direction: column;
+  }
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .cards-container {
+    flex-direction: row;
+    height: 30rem;
+  }
+  .thecode .container {
+    flex-direction: column;
+    max-width: 50%;
+  }
+  .card {
+    width: 30%;
+  }
+}
