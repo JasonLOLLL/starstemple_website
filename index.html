@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Website</title>
+    <link rel="stylesheet" href="our-journey.css" />
+    <link rel="stylesheet" href="genshin-impact.css">
+    <title>Fallen Studios Website</title>
   </head>
   <body>
+    <!-- The header which includes the navigation bar -->
     <header>
+      <!-- Div for mobile menu navigation -->
       <div class="menu-container">
         <div class="navigation" id="menu-nav">
           <li><a onclick="menuClose()" href="#">Home</a></li>
@@ -18,6 +22,7 @@
           <li><a onclick="menuClose()" href="#">Genshin Impact</a></li>
         </div>
       </div>
+      <!-- Separate div for bigger screen navigation -->
       <div class="wrapper">
         <a href="#" class="logo">Fallen Studios</a>
         <ul class="navigation">
@@ -30,6 +35,7 @@
         <img id="menu" src="./images/Hamburger_icon.png" alt="" />
       </div>
     </header>
+    <!-- Our home page -->
     <section class="home-heading">
       <div>
         <h2>Fallen Studios</h2>
@@ -37,10 +43,8 @@
           A group of two high school students determined to explore the realm of
           technology.
         </p>
+        <!-- learn more button -->
         <a href="#about"><button class="heading-button">learn more</button></a>
-        <!-- <div class="image-container">
-          <img src="./images/down-navigate.png" alt="down arrow" />
-        </div> -->
       </div>
     </section>
     <section class="about-section" id="about">
@@ -61,7 +65,9 @@
           what I do so far and I cannot wait for more.
         </p>
       </div>
+      <!-- Cards about our hobbies -->
       <div class="cards-container">
+        <!-- Coding card -->
         <div class="card">
           <div class="img-container">
             <img src="./images/codingicon.png" alt="video editing icon" />
@@ -75,6 +81,7 @@
             amazing applications using my keyboard.
           </p>
         </div>
+        <!-- Content creator card -->
         <div class="card">
           <div class="img-container">
             <img src="./images/youtube.png" alt="video editing icon" />
@@ -89,6 +96,7 @@
             much the powers of technology can achieve.
           </p>
         </div>
+        <!-- Piano card -->
         <div class="card">
           <div class="img-container">
             <img src="./images/piano.png" alt="video editing icon" />
@@ -127,7 +135,9 @@
           These three things have made me who I am today.
         </p>
       </div>
+      <!-- Spencer's cards about hobbies -->
       <div class="cards-container">
+        <!-- Video editing card -->
         <div class="card">
           <div class="img-container">
             <img src="./images/video.png" alt="video editing icon" />
@@ -140,6 +150,7 @@
             installed on my computer. I always found therapy in my creations.
           </p>
         </div>
+        <!-- Speedcubing card -->
         <div class="card">
           <div class="img-container">
             <img src="./images/rubik.png" alt="video editing icon" />
@@ -155,6 +166,7 @@
             cubing to pass the time.
           </p>
         </div>
+        <!-- Keyboard card -->
         <div class="card">
           <div class="img-container">
             <img src="./images/keyboard.png" alt="video editing icon" />
@@ -177,8 +189,10 @@
 
     <section class="thecode" id="code">
       <h2 class="title">The <span>Code</span></h2>
+      <!-- Div container with all the images for the carousel -->
       <div class="container carousel">
         <div class="description">
+          <!-- The first image about learning to code -->
           <h3><span>1.</span> Learning the code.</h3>
           <p>
             We knew we had to get started very quickly since we had a late
@@ -193,7 +207,7 @@
       </div>
       <div class="container carousel hidden">
         <div class="description">
-          <h3><span>2.</span> Some title.</h3>
+          <h3><span>2.</span> More learning..</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             cumque unde, blanditiis totam vitae velit nemo impedit voluptatem
@@ -248,6 +262,116 @@
           &rarr;
         </button>
       </div>
+    </section>
+
+    <section class="our-journey-section">
+      <!-- our journey text -->
+      <div class="our-journey">
+        <p>Our Journey</p>
+      </div>
+      <!-- 1st slide group -->
+      <div class="card1">
+        <!-- grouping the text inside a group -->
+        <ul class="paragraph-1">
+          <p>
+            When Spencer was little, he wanted to become a mechanical engineer.
+            He always wanted to be one. In 2016, Spencer transferred to a new
+            school and met a new kid named Jason on the bus. Little did he know
+            that this kid would become his best friend. We would eventually do
+            many activities together like cubing.
+          </p>
+          <!-- bus image -->
+          <!-- https://unsplash.com/photos/uZkgI3opcvE -->
+          <img class="bus" src="./images/bus.jpg" alt="school bus front" />
+        </ul>
+      </div>
+
+      <!-- 2nd slide card thing -->
+      <div class="card2">
+        <!-- texted grouped inside a group -->
+        <ul class="paragraph-2">
+          <p>
+            Spencer told him that he wanted to become a mechanical engineer when
+            he grows up. Somehow, this influenced Jason to want to become a
+            software engineer. With the school that we go to, Carver Engineering
+            and Science, we are offered a lot of opportunities like this one to
+            help us reach our goal.
+          </p>
+          <!-- computer image -->
+          <img
+            class="computer"
+            src="./images/computer.jpg"
+            alt="a picture of laptop on a white table"
+          />
+        </ul>
+      </div>
+    </section>
+
+    <section class="genshinimpact-section">
+      <!-- genshin impact text assigned to "genshin impact" -->
+    <div class="genshin-impact">Genshin Impact</div>
+    <!-- the first informational transluscent slide thing -->
+    <div class="card1">
+      <!-- group inside group -->
+      <ul class="paragraph-1">
+        <!-- text -->
+        <p>
+          In 2020, a new game was released by a Chinese company called MiHoYo.
+          The game was titled Genshin Impact and it quickly became one of the
+          most popular games in the United States. Jason and I both got hooked
+          onto the game. With the game being free to play and costing nothing
+          but time, we quickly hopped onto the grind of Genshin Impact.
+        </p>
+        <!-- img on the right -->
+        <!-- https://www.pinterest.com/pin/778067273118859975/ -->
+        <img
+          class="genshin1"
+          src="./images/genshin2.jpg"
+          alt="a picture of genshin impact characters"
+        />
+      </ul>
+    </div>
+
+    <!-- second card informational thing -->
+    <div class="card2">
+      <!-- another group inside a group -->
+      <ul class="paragraph-2">
+        <!-- text -->
+        <p>
+          Incase you are unfamiliar of what this game Genshin Impact is about,
+          take Zelda Breath of the Wild for example and add the anime style. An
+          open world game completely for free. The only catch is, its a gatcha
+          game. If you don't know what a gatcha game is, it is gambling with an
+          in-game currency to get rewards like characters and weapons.
+        </p>
+        <!-- img on the right -->
+        <!-- https://twitter.com/oioibunny/status/1315489156940914688 -->
+        <img
+          class="genshin2"
+          src="./images/venti1.jpg"
+          alt="a picture of a genshin impact character named venti"
+        />
+      </ul>
+    </div>
+
+    <!-- 3rd card group -->
+    <div class="card3">
+      <!-- GROUP INSIDE A GROUP -->
+      <ul class="paragraph-3">
+        <!-- text -->
+      <p>
+        Now you may be wondering, "Why are these two highschoolers putting a
+        page about some anime game?" The answer to that is because it is one of
+        the biggest parts of our lives. As players, we have poured hours, and
+        money into this game to get to where we are. The only reason why we are
+        putting this here is because we need another page and don't know what to
+        put other than our favorite game.
+      </p>
+      <!-- klee imgage -->
+      <!-- https://milavanii.tumblr.com/post/633240710664110080/genshin-impact-fanart-of-klee-3 -->
+      <img class="genshin3"
+      src="./images/klee1.png" alt="a picture of a small anime girl wearing red named klee">
+    </div>
     </section>
   </body>
   <script src="./app.js"></script>
