@@ -16,6 +16,7 @@
       <!-- Div for mobile menu navigation -->
       <div class="menu-container">
         <div class="navigation" id="menu-nav">
+          <!-- menuClose() is for JavaScript -->
           <li><a onclick="menuClose()" href="#">Home</a></li>
           <li><a onclick="menuClose()" href="#about">About</a></li>
           <li><a onclick="menuClose()" href="#code">The Code</a></li>
@@ -206,7 +207,9 @@
           <img src="./images/coding.png" alt="" />
         </div>
       </div>
+      <!-- Added 'hidden' class to later use javascript to code carousel -->
       <div class="container carousel hidden">
+        <!-- The second image about composing the code -->
         <div class="description">
           <h3><span>2.</span> Composing the Code</h3>
           <p>
@@ -222,6 +225,7 @@
         </div>
       </div>
       <div class="container carousel hidden">
+        <!-- The third image about not reaching the deadline -->
         <div class="description">
           <h3><span>3.</span> Scrapped</h3>
           <p>
@@ -238,6 +242,7 @@
       </div>
       <div class="container carousel hidden">
         <div class="description">
+          <!-- Finishing the website -->
           <h3><span>4.</span> Actually Making the Website</h3>
           <p>
             After scrapping the first website, Jason decided to go for a one
@@ -249,6 +254,7 @@
           <img src="./images/finalwebsite.png" alt="" />
         </div>
       </div>
+      <!-- Carousel page numbers and buttons -->
       <div class="carousel-container">
         <p id="page-number">1 of 4</p>
         <button class="carousel-button" id="carousel-backward-button">

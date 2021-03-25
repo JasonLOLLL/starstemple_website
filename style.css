@@ -1,5 +1,7 @@
+/* Importing the Roboto font family */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
+/* Some custom properties or variables for colors that we will use in this website */
 :root {
   --primaryDark: #031927;
   --primaryLight: #9dd1f1;
@@ -8,6 +10,7 @@
   --primaryRed: #ba1200;
 }
 
+/* Reset default browser properties */
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +18,13 @@
   scroll-behavior: smooth;
 }
 
+/* Apply Robot font and set background to white */
 body {
   font-family: "Roboto", sans-serif;
   background: white;
 }
 
+/* Create the heading and fix it to the top with a flexbox for the navigation and other properties to make it look nice */
 header .wrapper {
   position: fixed;
   top: 0;
@@ -34,6 +39,7 @@ header .wrapper {
   z-index: 1000;
 }
 
+/* The logo or text of 'Fallen Studios' */
 header .logo {
   color: white;
   text-decoration: none;
@@ -41,16 +47,19 @@ header .logo {
   font-size: 1.2rem;
 }
 
+/* This is the navigation bar for larger screens; we set the display for none since we build mobile layout first (change later in media queries)*/
 header .wrapper .navigation {
   display: none;
   padding: 1.5rem;
   flex-shrink: 0;
 }
 
+/* remove bullet points */
 .navigation li {
   list-style: none;
 }
 
+/* styling nav links */
 .navigation li a {
   text-decoration: none;
   margin-left: 3rem;
@@ -59,19 +68,23 @@ header .wrapper .navigation {
   transition: color 200ms ease;
 }
 
+/* add hover effect and smooth fade transition to them */
 .navigation li a:hover {
   color: var(--primaryLight);
 }
 
+/* when javascript adds 'sticky' class then change heading background (for scrolling) */
 .sticky {
   background: var(--primaryDark);
 }
 
+/* the hamburger button for mobile screen */
 #menu {
   display: block;
   height: 3rem;
 }
 
+/* the mobile menu */
 header .menu-container {
   display: none;
   flex-direction: column;
@@ -86,6 +99,7 @@ header .menu-container {
   z-index: 1000;
 }
 
+/* Create the buttons for navigation with another flexbox */
 header .menu-container .navigation {
   height: calc(100% - 5rem);
   position: absolute;
@@ -95,6 +109,7 @@ header .menu-container .navigation {
   flex-direction: column;
 }
 
+/* styling the nav links for menu screen */
 header .menu-container .navigation li {
   padding: 1.5rem 0;
   margin: 0.7rem auto;
@@ -103,14 +118,17 @@ header .menu-container .navigation li {
   transition: all 150ms ease;
 }
 
+/* add a hover effect */
 header .menu-container .navigation li:hover {
   background: #020e16;
 }
 
+/* center links horizontally */
 header .menu-container a {
   margin: 0 auto;
 }
 
+/* home page. added a background with a hint of blue with the blend mode multiply; setting it full width and height of the screen */
 .home-heading {
   background-color: var(--primaryBlue);
   background-image: url(./images/earth.jpg);
@@ -125,6 +143,7 @@ header .menu-container a {
   max-height: 100%;
 }
 
+/* getting child div of class which contains the heading and paragraph; adding another flexbox */
 .home-heading > div {
   margin: 0 auto;
   height: 100%;
@@ -135,6 +154,7 @@ header .menu-container a {
   overflow: hidden;
 }
 
+/* adding emphasis to the heading 'Fallen Studios' */
 .home-heading h2 {
   color: var(--primaryRed);
   margin-bottom: 1rem;
@@ -144,6 +164,7 @@ header .menu-container a {
   font-weight: 900;
 }
 
+/* styling the paragraph element for the home page */
 .home-heading p {
   color: white;
   font-size: 1.2rem;
@@ -152,18 +173,7 @@ header .menu-container a {
   margin-bottom: 2rem;
 }
 
-.home-heading .image-container {
-  width: 5rem;
-  height: 5rem;
-}
-
-.home-heading .image-container img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  color: white;
-}
-
+/* the 'learn more' button adding smooth transitions and styling */
 .home-heading .heading-button {
   outline: none;
   border: none;
@@ -176,11 +186,13 @@ header .menu-container a {
   transition: all 150ms ease;
 }
 
+/* hover pseudo class effect*/
 .home-heading .heading-button:hover {
   background: var(--primaryRed);
   padding: 0.9rem 4rem;
 }
 
+/* about us section */
 .about-section {
   background: white;
   overflow: hidden;
@@ -189,12 +201,13 @@ header .menu-container a {
   display: inline-block;
 }
 
+/* top description including my name and short biography */
 .about-section .top-description {
   text-align: center;
   padding: 2rem;
-  /* fix sizing issues it should take up no more than 150vh */
 }
 
+/* the 'About' title */
 .title {
   color: var(--primaryDark);
   margin: 3rem 0;
@@ -203,6 +216,7 @@ header .menu-container a {
   text-align: center;
 }
 
+/* short biography paragraph styling */
 .about-section .top-description p {
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -211,10 +225,12 @@ header .menu-container a {
   margin: 0 auto;
 }
 
+/* add red to the names */
 span {
   color: var(--primaryRed);
 }
 
+/* container of the cards; add flexbox for responsiveness. we have three cards */
 .cards-container {
   display: flex;
   justify-content: space-around;
@@ -226,6 +242,7 @@ span {
   margin: 0 auto;
 }
 
+/* styling all individual cards */
 .card {
   width: 90%;
   height: 25rem;
@@ -238,15 +255,18 @@ span {
   margin: 1rem 0.8rem;
 }
 
+/* the heading for the card */
 .card h3 {
   font-size: 2rem;
   margin: 0.5rem auto;
 }
 
+/* the description for the cards */
 .card p {
   margin: 1rem auto;
 }
 
+/* the icon container for the cards */
 .cards-container .img-container {
   width: 5.5rem;
   height: 5.5rem;
@@ -254,16 +274,19 @@ span {
   border-radius: 10%;
 }
 
+/* the img icon for the cards */
 .cards-container .img-container img {
   width: 100%;
   padding: 1rem;
   object-fit: cover;
 }
 
+/* hyperlinks in the card descriptions. */
 .card a {
   color: white;
 }
 
+/* next section, the code */
 .thecode {
   width: 100vw;
   max-width: 100%;
@@ -272,10 +295,12 @@ span {
   display: inline-block;
 }
 
+/* 'The Code' title */
 .thecode .title {
   margin-top: 8rem;
 }
 
+/* The container for each of the code divs */
 .thecode .container {
   display: flex;
   justify-content: center;
@@ -289,6 +314,7 @@ span {
   max-width: 90%;
 }
 
+/* the description container for each code 'card' */
 .thecode .container .description {
   width: 100%;
   margin: 1rem 1rem 1rem 0;
@@ -296,15 +322,18 @@ span {
   padding: 3rem;
 }
 
+/* the paragraph for description card */
 .thecode .container .description p {
   margin-top: 1rem;
 }
 
+/* enlarge or emphasize the numbers beside the title */
 .thecode .container .description span {
   font-size: 2rem;
   color: white;
 }
 
+/* the bottom image container of the 'card' */
 .thecode .container .img-container {
   width: 100%;
   max-height: 20rem;
@@ -317,22 +346,26 @@ span {
   overflow: hidden;
 }
 
+/* setting img to 100% and contain img within parent div */
 .thecode .container .img-container img {
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   object-fit: contain;
 }
 
+/* since this is a carousel, hide class 'hidden' so only one card shows at a time */
 .thecode .hidden {
   display: none;
 }
 
+/* extra styling for carousel */
 .carousel-container {
   margin-top: -4rem;
   text-align: center;
 }
 
+/* carousel buttons for back and forward */
 .carousel-button {
   display: inline-block;
   margin: 0 1rem;
@@ -346,29 +379,35 @@ span {
   transition: background 150ms ease;
 }
 
+/* add hover effect on button */
 .carousel-button:hover {
   background-color: #020e16;
 }
 
+/* page number for carousel */
 .carousel-container #page-number {
   text-align: center;
   font-size: 2.5rem;
 }
 
 /* Media query to set the flexbox to column when it reaches smaller screens */
+/* There are three different queries to accomodate 1x3 card, 2x card + 1x card, or 3x cards on the flexbox */
 
 @media screen and (min-width: 41.875rem) {
   .cards-container {
+    /* change organization of cards to a row */
     flex-direction: row;
     height: 90rem;
   }
 
   .card {
+    /* width to 90% so only one card per row on these smaller screens */
     width: 90%;
   }
 }
 
 @media screen and (min-width: 52.625rem) {
+  /* this is for mobile navigation; if it triggers media query then remove hamburger menu (mobile) and replace with desktop navigation */
   header .wrapper .navigation {
     display: flex;
     padding: 1.5rem;
@@ -392,6 +431,7 @@ span {
     flex-direction: column;
   }
   .card {
+    /* each size to 40% so that 2 cards will fit on one row and the third one on the 2nd row */
     width: 40%;
   }
 }
@@ -406,6 +446,7 @@ span {
     max-width: 50%;
   }
   .card {
+    /* each size to 30% so all 3 cards will fit on one row */
     width: 30%;
   }
 }
